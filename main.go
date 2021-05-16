@@ -48,8 +48,11 @@ func main() {
 		fmt.Printf("json解析失败")
 	}
 
-	y1, y1_validity := getCommission(Y1, c)
-	y3, y3_validity := getCommission(Y3, c)
-	fmt.Printf("y1费率的值为：%v，有效性为：%v\n", y1, y1_validity)
-	fmt.Printf("y3费率的值为：%v，有效性为：%v\n", y3, y3_validity)
+	y1, y1Validity := getCommission(Y1, c)
+	y3, y3Validity := getCommission(Y3, c)
+	y2, y2Validity := getCommission(Y2, c)
+	fmt.Printf("输入的json字符串：%v\n", commision)
+	fmt.Printf("y1费率的值为：%v，有效性为：%v\n", y1, y1Validity)
+	fmt.Printf("y2费率的值为：%v，有效性为：%v\n", y2, y2Validity)
+	fmt.Printf("y3费率的值为：%v，有效性为：%v\n", y3, y3Validity)
 }
